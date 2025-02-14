@@ -66,5 +66,11 @@ namespace Z_Kutuphane
             TrBooks TrBooks = new TrBooks();
             TrBooks.ShowDialog();
         }
+
+        private void EnBooks_Click(object sender, EventArgs e)
+        {
+            EnBooks En = new EnBooks();
+            En.ShowDialog();
+        }
     }
 }

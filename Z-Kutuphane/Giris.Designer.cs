@@ -131,6 +131,7 @@
             this.EnBooks.Text = "Yabancı Kitaplar";
             this.EnBooks.TextColor = System.Drawing.Color.White;
             this.EnBooks.UseVisualStyleBackColor = false;
+            this.EnBooks.Click += new System.EventHandler(this.EnBooks_Click);
             // 
             // Odunc
             // 
