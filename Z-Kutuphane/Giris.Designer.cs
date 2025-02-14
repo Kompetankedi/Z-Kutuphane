@@ -48,8 +48,9 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(0, 0);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(528, 37);
+            this.rjButton1.Size = new System.Drawing.Size(704, 46);
             this.rjButton1.TabIndex = 0;
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
@@ -68,9 +69,10 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.White;
             this.rjButton2.Image = global::Z_Kutuphane.Properties.Resources.subtract_32px;
-            this.rjButton2.Location = new System.Drawing.Point(447, 5);
+            this.rjButton2.Location = new System.Drawing.Point(596, 6);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(31, 27);
+            this.rjButton2.Size = new System.Drawing.Size(41, 33);
             this.rjButton2.TabIndex = 2;
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
@@ -87,9 +89,10 @@
             this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close.ForeColor = System.Drawing.Color.White;
             this.Close.Image = global::Z_Kutuphane.Properties.Resources.close_32px;
-            this.Close.Location = new System.Drawing.Point(484, 5);
+            this.Close.Location = new System.Drawing.Point(645, 6);
+            this.Close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(31, 27);
+            this.Close.Size = new System.Drawing.Size(41, 33);
             this.Close.TabIndex = 1;
             this.Close.TextColor = System.Drawing.Color.White;
             this.Close.UseVisualStyleBackColor = false;
@@ -105,9 +108,10 @@
             this.TrBooks.FlatAppearance.BorderSize = 0;
             this.TrBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TrBooks.ForeColor = System.Drawing.Color.White;
-            this.TrBooks.Location = new System.Drawing.Point(46, 89);
+            this.TrBooks.Location = new System.Drawing.Point(61, 110);
+            this.TrBooks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TrBooks.Name = "TrBooks";
-            this.TrBooks.Size = new System.Drawing.Size(150, 40);
+            this.TrBooks.Size = new System.Drawing.Size(200, 49);
             this.TrBooks.TabIndex = 3;
             this.TrBooks.Text = "Türkçe Kitaplar";
             this.TrBooks.TextColor = System.Drawing.Color.White;
@@ -124,9 +128,10 @@
             this.EnBooks.FlatAppearance.BorderSize = 0;
             this.EnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EnBooks.ForeColor = System.Drawing.Color.White;
-            this.EnBooks.Location = new System.Drawing.Point(328, 89);
+            this.EnBooks.Location = new System.Drawing.Point(437, 110);
+            this.EnBooks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EnBooks.Name = "EnBooks";
-            this.EnBooks.Size = new System.Drawing.Size(150, 40);
+            this.EnBooks.Size = new System.Drawing.Size(200, 49);
             this.EnBooks.TabIndex = 4;
             this.EnBooks.Text = "Yabancı Kitaplar";
             this.EnBooks.TextColor = System.Drawing.Color.White;
@@ -143,20 +148,22 @@
             this.Odunc.FlatAppearance.BorderSize = 0;
             this.Odunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Odunc.ForeColor = System.Drawing.Color.White;
-            this.Odunc.Location = new System.Drawing.Point(188, 163);
+            this.Odunc.Location = new System.Drawing.Point(251, 201);
+            this.Odunc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Odunc.Name = "Odunc";
-            this.Odunc.Size = new System.Drawing.Size(150, 40);
+            this.Odunc.Size = new System.Drawing.Size(200, 49);
             this.Odunc.TabIndex = 5;
             this.Odunc.Text = "Ödünç İşlemleri";
             this.Odunc.TextColor = System.Drawing.Color.White;
             this.Odunc.UseVisualStyleBackColor = false;
+            this.Odunc.Click += new System.EventHandler(this.Odunc_Click);
             // 
             // Giris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(527, 358);
+            this.ClientSize = new System.Drawing.Size(703, 441);
             this.Controls.Add(this.Odunc);
             this.Controls.Add(this.EnBooks);
             this.Controls.Add(this.TrBooks);
@@ -165,6 +172,7 @@
             this.Controls.Add(this.rjButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Giris";
             this.Text = "Z-Kutuphane";
             this.Load += new System.EventHandler(this.Giris_Load);

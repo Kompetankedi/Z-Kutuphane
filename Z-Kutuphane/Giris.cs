@@ -72,5 +72,11 @@ namespace Z_Kutuphane
             EnBooks En = new EnBooks();
             En.ShowDialog();
         }
+
+        private void Odunc_Click(object sender, EventArgs e)
+        {
+            Odunc o = new Odunc();
+            o.ShowDialog();
+        }
     }
 }
