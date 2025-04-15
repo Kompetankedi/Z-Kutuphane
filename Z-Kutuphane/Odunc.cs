@@ -188,5 +188,16 @@ namespace Z_Kutuphane
               txtAcıklamalar.Text = bunifuDataGridView1.CurrentRow.Cells[5].Value.ToString();
               txtClass.Text = bunifuDataGridView1.CurrentRow.Cells[6].Value.ToString();
         }
+
+        private void rjButton6_Click(object sender, EventArgs e)
+        {
+            Ogrenciler o = new Ogrenciler();
+            o.ShowDialog();
+
+            if (!string.IsNullOrEmpty(o.AdSoyad))
+            {
+                txtAlıcıAdSyd.Text = o.AdSoyad;
+            }
+        }
     }
 }
