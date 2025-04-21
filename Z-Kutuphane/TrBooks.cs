@@ -8,10 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Utilities.BunifuDataGridView.Transitions;
 
 namespace Z_Kutuphane
 {
-    public partial class TrBooks: Form
+    public partial class TrBooks : Form
     {
         private Point dragStartPoint;
         private bool isDragging = false;
@@ -92,11 +93,11 @@ namespace Z_Kutuphane
             Close.BringToFront();
             CenterToScreen();
             tlist();
-            txtid.Width= 260; txtid.Height = 37;
+            txtid.Width = 260; txtid.Height = 37;
             txtBookName.Width = 260; txtBookName.Height = 37;
             txtBookid.Width = 260; txtBookid.Height = 37;
             txtBookAuthor.Width = 260; txtBookAuthor.Height = 37;
-            txtBookAuthor.Width = 260;txtBookAuthor.Height = 37;
+            txtBookAuthor.Width = 260; txtBookAuthor.Height = 37;
             txtSearchBookid.Width = 260; txtSearchBookid.Height = 37;
             txtSearchBookName.Width = 260; txtSearchBookName.Height = 37;
             txtSearchBookAuthor.Width = 260; txtSearchBookAuthor.Height = 37;
@@ -108,12 +109,12 @@ namespace Z_Kutuphane
         {
             tlist();
         }
-#endregion
+        #endregion
         #region Silme işlemleri
         int trselected = 0;
         private void BtnBookDel_Click(object sender, EventArgs e)
         {
-            try 
+            try
             {
                 if (bunifuDataGridView1.CurrentRow != null)
                 {
@@ -126,9 +127,9 @@ namespace Z_Kutuphane
                     con.Close();
                     tlist();
                 }
-            } catch(Exception ex) { MessageBox.Show(ex.Message); }
+            } catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
-#endregion
+        #endregion
         #region Ekleme işlemleri
         private void BtnAdd_Click(object sender, EventArgs e)
         {
@@ -146,7 +147,7 @@ namespace Z_Kutuphane
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
-#endregion
+        #endregion
         #region Güncelleme işlemleri
         private void BtnBookUpdate_Click(object sender, EventArgs e)
         {
@@ -155,16 +156,16 @@ namespace Z_Kutuphane
                 if (con.State == ConnectionState.Closed)
                 { con.Open(); }
                 SqlCommand komutguncelle = new SqlCommand("Update TrRoman set KitapNo=@a1,KitapAdi=@a3,KitapYazar=@a4 where id=@a5", con);
-                komutguncelle.Parameters.AddWithValue("@a1", txtBookid.Text);
-                komutguncelle.Parameters.AddWithValue("@a3", txtBookName.Text);
-                komutguncelle.Parameters.AddWithValue("@a4", txtBookAuthor.Text);
-                komutguncelle.Parameters.AddWithValue("@a5", txtid.Text);
+                komutguncelle.Parameters.AddWithValue("@a1", txtBookid.Text);// kitap numarası
+                komutguncelle.Parameters.AddWithValue("@a3", txtBookName.Text);//kitap adı
+                komutguncelle.Parameters.AddWithValue("@a4", txtBookAuthor.Text);//kitap yazarı
+                komutguncelle.Parameters.AddWithValue("@a5", txtid.Text); //PRİMARY KEY
                 komutguncelle.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Kayıt Güncellendi.");
                 tlist();
             }
-            catch(Exception ex) { MessageBox.Show(ex.Message); }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         #endregion
         #region Arama
@@ -192,5 +193,8 @@ namespace Z_Kutuphane
             txtBookid.Text = bunifuDataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
         #endregion
-    }
-}
+
+        }
+    }            
+
+

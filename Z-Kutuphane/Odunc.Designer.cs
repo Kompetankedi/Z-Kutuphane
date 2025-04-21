@@ -71,6 +71,8 @@
             this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.rjButton6 = new CustomControls.RJControls.RJButton();
+            this.rjButton7 = new CustomControls.RJControls.RJButton();
+            this.rjButton8 = new CustomControls.RJControls.RJButton();
             this.DatePickerVerildigi = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.DatePickerAlindigi = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.txtAcıklamalar = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -225,7 +227,7 @@
             this.rjButton4.FlatAppearance.BorderSize = 0;
             this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(577, 119);
+            this.rjButton4.Location = new System.Drawing.Point(889, 64);
             this.rjButton4.Name = "rjButton4";
             this.rjButton4.Size = new System.Drawing.Size(150, 40);
             this.rjButton4.TabIndex = 73;
@@ -244,9 +246,9 @@
             this.rjButton5.FlatAppearance.BorderSize = 0;
             this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton5.ForeColor = System.Drawing.Color.White;
-            this.rjButton5.Location = new System.Drawing.Point(733, 119);
+            this.rjButton5.Location = new System.Drawing.Point(577, 110);
             this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(150, 73);
+            this.rjButton5.Size = new System.Drawing.Size(150, 40);
             this.rjButton5.TabIndex = 74;
             this.rjButton5.Text = "Tabloyu Yenile";
             this.rjButton5.TextColor = System.Drawing.Color.White;
@@ -325,7 +327,7 @@
             this.rjButton6.FlatAppearance.BorderSize = 0;
             this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton6.ForeColor = System.Drawing.Color.White;
-            this.rjButton6.Location = new System.Drawing.Point(577, 165);
+            this.rjButton6.Location = new System.Drawing.Point(733, 110);
             this.rjButton6.Name = "rjButton6";
             this.rjButton6.Size = new System.Drawing.Size(150, 40);
             this.rjButton6.TabIndex = 84;
@@ -333,6 +335,44 @@
             this.rjButton6.TextColor = System.Drawing.Color.White;
             this.rjButton6.UseVisualStyleBackColor = false;
             this.rjButton6.Click += new System.EventHandler(this.rjButton6_Click);
+            // 
+            // rjButton7
+            // 
+            this.rjButton7.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton7.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton7.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton7.BorderRadius = 15;
+            this.rjButton7.BorderSize = 3;
+            this.rjButton7.FlatAppearance.BorderSize = 0;
+            this.rjButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton7.ForeColor = System.Drawing.Color.White;
+            this.rjButton7.Location = new System.Drawing.Point(889, 110);
+            this.rjButton7.Name = "rjButton7";
+            this.rjButton7.Size = new System.Drawing.Size(150, 40);
+            this.rjButton7.TabIndex = 85;
+            this.rjButton7.Text = "TR Kitaplar";
+            this.rjButton7.TextColor = System.Drawing.Color.White;
+            this.rjButton7.UseVisualStyleBackColor = false;
+            this.rjButton7.Click += new System.EventHandler(this.rjButton7_Click);
+            // 
+            // rjButton8
+            // 
+            this.rjButton8.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton8.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton8.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton8.BorderRadius = 15;
+            this.rjButton8.BorderSize = 3;
+            this.rjButton8.FlatAppearance.BorderSize = 0;
+            this.rjButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton8.ForeColor = System.Drawing.Color.White;
+            this.rjButton8.Location = new System.Drawing.Point(577, 156);
+            this.rjButton8.Name = "rjButton8";
+            this.rjButton8.Size = new System.Drawing.Size(150, 40);
+            this.rjButton8.TabIndex = 86;
+            this.rjButton8.Text = "EN Kitaplar";
+            this.rjButton8.TextColor = System.Drawing.Color.White;
+            this.rjButton8.UseVisualStyleBackColor = false;
+            this.rjButton8.Click += new System.EventHandler(this.rjButton8_Click);
             // 
             // DatePickerVerildigi
             // 
@@ -877,6 +917,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1400, 752);
+            this.Controls.Add(this.rjButton8);
+            this.Controls.Add(this.rjButton7);
             this.Controls.Add(this.rjButton6);
             this.Controls.Add(this.bunifuDataGridView1);
             this.Controls.Add(this.DatePickerVerildigi);
@@ -942,5 +984,7 @@
         private Bunifu.UI.WinForms.BunifuDatePicker DatePickerVerildigi;
         private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
         private CustomControls.RJControls.RJButton rjButton6;
+        private CustomControls.RJControls.RJButton rjButton7;
+        private CustomControls.RJControls.RJButton rjButton8;
     }
 }

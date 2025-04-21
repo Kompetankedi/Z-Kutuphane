@@ -199,5 +199,35 @@ namespace Z_Kutuphane
                 txtAlıcıAdSyd.Text = o.AdSoyad;
             }
         }
+
+        private void rjButton7_Click(object sender, EventArgs e)
+        {
+            OTrBooks oTrBooks = new OTrBooks();
+            oTrBooks.ShowDialog();
+
+            if (!string.IsNullOrEmpty(oTrBooks.KitapAdi))
+            {
+                txtBookName.Text = oTrBooks.KitapAdi;
+            }
+            if (oTrBooks.KitapNo != 0)
+            {
+                txtBookNo.Text = Convert.ToString(oTrBooks.KitapNo) ;
+            }
+        }
+
+        private void rjButton8_Click(object sender, EventArgs e)
+        {
+            OEnBooks oEnBooks = new OEnBooks();
+            oEnBooks.ShowDialog();
+            if (!string.IsNullOrEmpty(oEnBooks.KitapAdi))
+            {
+                txtBookName.Text = oEnBooks.KitapAdi;
+            }
+            if (oEnBooks.KitapNo != 0)
+            {
+                txtBookNo.Text = Convert.ToString(oEnBooks.KitapNo);
+            }
+
+        }
     }
 }
